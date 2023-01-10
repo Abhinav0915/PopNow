@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
 
-class homepage extends StatelessWidget {
+class homepage extends StatefulWidget {
   const homepage({Key? key}) : super(key: key);
 
   @override
+  State<homepage> createState() => _homepageState();
+}
+
+class _homepageState extends State<homepage> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('PopNow'),
-        backgroundColor: Colors.red,
+      body: SafeArea(
+        child: Container(
+           decoration:const  BoxDecoration(
+            image: DecorationImage(
+            image: AssetImage('assets/images/bg4.jpg'),
+            fit: BoxFit.cover,
+            )
+           ),
+        ),
       ),
-      body: const Center(
-        child: Text('Welcome to PopNow!'),
-      ),
-       
     );
   }
 }

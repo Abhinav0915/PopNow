@@ -21,7 +21,7 @@ class popnow extends StatelessWidget {
       initialRoute: '/',
       routes:
       {
-        '/': (context) => const homepage(),
+        '/': (context) =>  const homepage(),
         // '/second': (context) => const SecondRoute(),
       },
     );

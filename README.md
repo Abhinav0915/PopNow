@@ -1,2 +1,2 @@
 # PopNow
-A flutter project which will give you reminders about your daily routine
+A flutter project where you can add reminders about your daily routine
